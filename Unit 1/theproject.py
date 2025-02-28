@@ -5,7 +5,12 @@ app.config['DEBUG'] = True
 
 @app.route('/')
 def hello():
-   message = "Hello, Flask!"
+   message = "Hello, Flask! <a href='/Two'>Goodbye!</a>"
+   return message
+
+@app.route('/Two')
+def the():
+   message = "The Second: The First"
    return message
 
 if __name__ == '__main__':
