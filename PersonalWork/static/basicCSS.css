@@ -1,0 +1,12 @@
+header{
+    margin: 0;
+    width: auto;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+nav{
+    margin: 0;
+    width: auto;
+    border: 5px solid black;
+    border-top: 4px solid black;
+}

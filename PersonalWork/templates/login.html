@@ -1,0 +1,21 @@
+{% extends 'basis.html' %}
+{% block title %}
+    Authentication
+{% endblock %}
+{% block area %}
+    <h2>Login or Register</h2>
+{% endblock %}
+{% block section %}
+    <form action="/login" method="POST">  <!-- Change this line -->
+        <h2>Login</h2>
+        <label>Username: <input type="text" name="username"/></label><br>
+        <label>Password: <input type="password" name="password"/></label><br>
+        <button>Submit</button>
+    </form>
+    <form action="/register" method="POST">  <!-- Change this line -->
+        <h2>Register</h2>
+        <label>Username: <input type="text" name="username"/></label><br>
+        <label>Password: <input type="password" name="password"/></label><br>
+        <button>Submit</button>
+    </form>
+{% endblock %}

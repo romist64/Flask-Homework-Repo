@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Universal Constructs - {% block title %}{% endblock %}</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='basicCSS.css') }}">
+   </head>
+   <header>{% block area %}{% endblock %}</header>
+   <nav>
+      <p><img src="{{ url_for('static', filename='placeholder-1024x1024.png') }}" alt="Placeholder-Logo" height="128" width="128"></p>
+   </nav>
+   <section>
+      {% block section %}{% endblock %}
+   </section>
+   <article>
+      {% block article %}{% endblock %}
+   </article>
+</html>
